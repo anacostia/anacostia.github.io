@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>📡Radar Weather Page - Forecast for Franklin | Radar</title>
+    <meta name="author" content="Walter Valdez">
+    <meta name="description" content="Franklin Weather Page for CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
+
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:300,400,800" rel="stylesheet">
+    
+    <!-- Google API font reference -->
+
+    <!-- Stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header>
+       
+        <h1>📡Radar</h1>
+        <div class="subheading">Forecast for the Franklin, Greenville and Springfield area.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>The City of Franklin</h2>
+        <figure>
+            <img src="images/foto3.png" alt="Franklin forest picture" width="640" height="480">
+        </figure>
+        <section>
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>☀Sunny</p>
+                <p>High:90°F</p>
+                <p>Low:66°F</p>
+
+            </div>
+            <div class="current">
+                <picture>
+                    <img src="images/sunny.png" alt="sunny weather" width="640" height="480">
+                </picture>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: 💨 5mph SW</p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+
+            <p class="town-article">
+                <img src="images/foto6.png" alt="Another Franklin pciture" width="640" height="480"> Pecorino bocconcini macaroni cheese. Emmental cut the cheese fondue cheesy grin cheese slices roquefort mozzarella cheesecake. Edam manchego goat cottage cheese melted cheese jarlsberg cauliflower cheese jarlsberg. Cheese slices bavarian bergkase taleggio dolcelatte.
+                Cheese slices smelly cheese gouda. Cheese on toast the big cheese cheese slices jarlsberg rubber cheese babybel boursin mozzarella. The big cheese airedale lancashire everyone loves cheddar port-salut cheese triangles chalk and cheese. Rubber cheese cheesy grin.
+                <br>
+                <br> T-bone swine spare ribs, chuck ground round prosciutto tri-tip filet mignon venison. Ham pig spare ribs, frankfurter venison drumstick pork loin ham hock. Flank turkey corned beef kevin tenderloin rump sausage biltong. Short loin frankfurter jerky, ground round bacon kielbasa chicken pork belly.
+                Pecorino bocconcini macaroni cheese. Emmental cut the cheese fondue cheesy grin cheese slices roquefort mozzarella cheesecake. Edam manchego goat cottage cheese melted cheese jarlsberg cauliflower cheese jarlsberg. Cheese slices bavarian bergkase taleggio dolcelatte.Cheese slices smelly cheese gouda. Cheese on toast the big cheese cheese slices jarlsberg rubber cheese babybel boursin mozzarella. The big cheese airedale lancashire everyone loves cheddar port-salut cheese triangles chalk and cheese. Rubber cheese cheesy grin.
+                Pecorino bocconcini macaroni cheese. Emmental cut the cheese fondue cheesy grin cheese slices roquefort mozzarella cheesecake. Edam manchego goat cottage cheese melted cheese jarlsberg cauliflower cheese jarlsberg. Cheese slices bavarian bergkase taleggio dolcelatte.Cheese slices smelly cheese gouda. Cheese on toast the big cheese cheese slices jarlsberg rubber cheese babybel boursin mozzarella. The big cheese airedale lancashire everyone loves cheddar port-salut cheese triangles chalk and cheese. Rubber cheese cheesy grin.
+                <br>
+                <br> Burgdoggen cow spare ribs, andouille ham hock biltong ball tip. Andouille kielbasa jerky, shank biltong tenderloin cow tri-tip doner leberkas alcatra meatball strip steak. Salami tri-tip pork tenderloin turkey, porchetta short ribs kevin. Sirloin ribeye pork belly jerky tongue corned beef. Chuck porchetta jerky tongue turducken, filet mignon tail swine.
+                <br>
+                <br> Pancetta doner ham hock shank, pig leberkas venison brisket ground round. Swine drumstick alcatra chicken, leberkas flank pork tri-tip cupim sausage tongue doner. Andouille venison burgdoggen flank, fatback short loin pork belly tongue short ribs frankfurter kielbasa. Frankfurter sirloin andouille picanha cupim. Turkey cupim kevin meatball drumstick t-bone, chicken shoulder pork belly frankfurter fatback burgdoggen ham hock. Shank chicken pig filet mignon leberkas boudin. Andouille hamburger jowl ham, fatback tenderloin ball tip. Porchetta ribeye corned beef ham hock chuck. Shankle jowl biltong rump, ground round prosciutto short loin bresaola frankfurter turkey shank corned beef ball tip cow. Sirloin sausage venison meatloaf turkey. Picanha ham shoulder, fatback beef rump kevin pancetta boudin chuck drumstick jowl filet mignon short ribs.
+                <br>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy; 2018 Radar 123 Main St.- Franklin, MU 83454-(999)999-9999- Contact: etc@etc.com -Walter Valdez • Lesson 5 - Franklin Weather page <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+
+</html>

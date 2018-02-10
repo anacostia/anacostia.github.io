@@ -1,0 +1,195 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+@media only screen and (max-width:600px) {
+    .forecast {
+        display: none;
+    }
+}
+
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Crete Round', serif;
+    font-weight: 300;
+    color: black;
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    background-color: #89a236;
+    padding: .5rem 0 .5rem 1%;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    background-color: #89a236;
+    padding: .5rem 0 .5rem 2%;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+/* Just in case if in the future I need to use the radar image */
+header img {
+    float: left;
+    padding: .5em; height: auto;
+    width: auto;
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 25px;
+}
+
+header .subheading {}
+
+nav {
+    background-color: #E0F3A2;
+}
+
+nav button {
+    position: absolute;
+    top: .1rem;
+    right: 1%;
+}
+
+nav ul {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    text-align: center;
+    display: block;
+    color: black;
+    padding: .5rem 0;
+    text-decoration: none;
+    /*-----options: none|underline|overline|line-through|initial|inherit -----*/
+    border-bottom: solid 1px #89a236;
+}
+
+nav ul li.active a {
+    background-color: yellowgreen;
+}
+
+nav ul li a:hover {
+    background-color: dimgrey;
+    color: limegreen;
+}
+
+main {
+    margin: 1px;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0 0 2%;
+    margin: 0;
+    color: #89a236;
+}
+
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0 0 2%;
+    margin: 0;
+    color: black;
+}
+
+main figure {
+    margin: 0 0 .2rem 10px;
+    width: 96%;
+    max-width: 640px;
+    margin: 1em 1em 1em 1em;
+}
+
+main figure img {
+    width: 100%;
+}
+
+
+
+
+
+main picture {
+    margin: 0 0 .2rem 10px;
+    width: 96%;
+    max-width: 640px;
+    margin: 1em 1em 1em 1em;
+}
+
+main picture img {
+    max-width:  width: 640px;
+}
+
+
+
+
+
+
+
+
+
+section {}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within article elements */
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+    /* fill the page in the small/phone view */
+    float: left;
+    max-width: 640px;
+    margin: 1em 1em 1em 1em;
+}
+.after-town-article img {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+    float: left;
+    max-width: 640px;
+    margin: 1em 1em 1em 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    color: black;
+    font-size: .75rem;
+}
+
+footer aside {}
+
+footer > p {}
+
+
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+
+/* Other Class Selectors */
+
+
