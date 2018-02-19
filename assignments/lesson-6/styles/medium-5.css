@@ -1,0 +1,40 @@
+@media only screen and (min-width: 600px) {
+/*-----BODY -----*/
+body {}
+
+
+/*-----Header -----*/
+
+/*-----Navigation -----*/
+nav ul {
+margin-left: 3%;
+border-left: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li {float: left;	width: auto;}
+nav ul li a {
+padding: .5rem 1rem;
+border-right: 1px solid rgba(0,0,0,0.3);
+border-bottom: none;
+}
+
+/*-----Content -----*/
+.hideSmall {display: block;}
+
+table.forecast {
+border-collapse: collapse;
+margin: 0 3%;
+width: 96%;
+display: table;
+text-align: center;
+}
+table.forecast th {
+    background-color: #89a236;
+color: black;
+font-size: 1rem;
+padding: .2rem;
+}
+    table.forecast td:hover {background-color: #89a236;}
+/*----- Footer -----*/
+    /*-----I need to fix this to be truly responsive, it works but not very well -----*/
+
+}

@@ -1,0 +1,108 @@
+            @media only screen and (min-width: 1024px) {
+            /*-----Body -----*/
+            body {
+                font-size: 16px;
+                font-family: 'Crete Round', serif;
+                font-weight: 300;
+                color: black;
+            }
+            /* IF I USE http://www.css-validator.org THIS VALIDATES, IF I USE W3 I GOT ONE ERROR BUT THAT SEEMS TO BE AN ERROR WITH THE VALIDATOR */
+            /* HEADER  */
+            .header {
+                 width: 100%;
+                 margin: 0 auto;
+            }
+            header {
+                background-color: #y89a236;
+                padding: .5rem 0 .5rem 2%;
+            }
+            header h1,
+            header h2 {
+                color: white;
+                margin: 0;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            }
+            header h1 {
+                font-size: 3rem;
+                font-weight: 800;
+            }
+            header h2 {
+                font-size: 1rem;
+                font-weight: 400;
+                padding-top: .25rem;
+            }
+            /* NAVIGATION  */
+            nav ul {
+                margin-left: 3%;
+                border-left: 1px solid rgba(0, 0, 0, 0.3);
+            }
+            nav ul li {
+                float: left;
+                width: auto;
+            }
+            nav ul li a {
+                padding: .5rem 1rem;
+                border-right: 1px solid rgba(0, 0, 0, 0.3);
+                border-bottom: none;
+            }
+            /* MAIN  */
+            main {
+                min-height: 5em;
+            }
+            main h1 {
+                font-size: 2rem;
+                font-weight: 400;
+                padding: 1rem 0 0 2%;
+                margin: 0;
+                color: #89a236;
+            }
+            main h2 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                padding: 1rem 0 0 2%;
+                margin: 0;
+                color: black;
+            }
+            main figure {
+                width: 100%;
+                max-width: 600px;
+                margin-left: 2%;
+            }
+            main figure img {
+                width: 100%;
+            }
+            main ul.weatherInfo {
+                padding-left: 2%;
+                margin: 0;
+            }
+            main ul.weatherInfo li {
+                list-style-type: circle;
+                line-height: 160%;
+                margin-left: 20px;
+                font-size: 1.2rem;
+            }
+            main ul.weatherInfo li strong {
+                font-weight: 400;
+                color: #89a236
+            }
+            /*  FOOTER  */
+            footer {
+                margin: 1rem 0;
+                clear: both;
+                background-color: #89a236;
+            }
+            footer p {
+                text-align: center;
+                padding: 0.5em;
+                margin: 0;
+                color: black;
+                font-size: .75rem;
+            }
+            /*----- OTHER -----*/
+            /*----- The navigation: Force an Element To Self-Clear its Children -----*/
+            .navigation:after,
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
