@@ -1,0 +1,131 @@
+@media only screen and (min-width: 600px) {
+    /*-----BODY -----*/
+    body {}
+
+
+    /*-----Header -----*/
+    /*-----Navigation -----*/
+    nav ul {
+        margin-left: 3%;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    nav ul li {
+        float: left;
+        width: auto;
+    }
+    nav ul li a {
+        padding: .5rem 1rem;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        border-bottom: none;
+    }
+
+    /*-----Content -----*/
+    .hideSmall {
+        display: block;
+    }
+
+    table.forecast {
+        border-collapse: collapse;
+        margin: 0 3%;
+        width: 96%;
+        display: table;
+        text-align: center;
+    }
+    table.forecast th {
+        background-color: #89a236;
+        color: black;
+        font-size: 1rem;
+        padding: .2rem;
+    }
+    table.forecast td:hover {
+        background-color: #89a236;
+    }
+    /*----- Footer -----*/
+    /*-----I need to fix this to be truly responsive, it works but not very well -----*/
+    main.gallerycontainer {
+        width: 96vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+    }
+
+    main.gallerycontainer figure:hover {
+        box-shadow: 5px 5px 5px #a2a0bb;
+    }
+
+    /*----- OTHER -----*/
+    h3 {
+        display: block;
+        font-size: 2em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 2%;
+        margin-right: 0;
+        font-weight: bold;
+    }
+
+    p {
+        display: block;
+        font-size: 1em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+        margin-left: 2%;
+        margin-right: 0;
+        font-weight: lighter;
+
+
+        fieldset {
+            background-color: yellowgreen;
+            border-radius: 1em;
+            margin: 1.5em 3px;
+            border: 1px solid green;
+        }
+
+        legend {
+
+            color: darkslategrey;
+            background-color: #E0F3A2;
+            border-radius: 1em;
+            margin-left: 1%;
+            padding: 1em;
+            border: #89a236 solid 1px;
+        }
+
+        label {
+            display: block;
+            margin: .5em;
+
+        }
+
+        label span {
+            display: block;
+
+
+
+        }
+
+
+
+
+        .otrocoso {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 10px solid white;
+        }
+
+        .fotito {
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            border: 10px solid white;
+        }
+
+
+        .articulo {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            border: 10px solid white;
+        }
+
+    }

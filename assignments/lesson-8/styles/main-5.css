@@ -1,0 +1,282 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+/* BODY  */
+
+body {
+    font-size: 16px;
+    font-family: 'Crete Round', serif;
+    font-weight: 300;
+    color: black;
+}
+
+/* IF I USE http://www.css-validator.org THIS VALIDATES, IF I USE W3 I GOT ONE ERROR BUT THAT SEEMS TO BE AN ERROR WITH THE VALIDATOR */
+
+/* HEADER  */
+
+header {
+    background-color: #89a236;
+    padding: .5rem 0 .5rem 2%;
+}
+
+header h1,
+header h2 {
+    color: white;
+    margin: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-top: .25rem;
+}
+
+/* NAVIGATION  */
+
+nav {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    background-color: #E0F3A2;
+    font-size: 18px;
+
+}
+
+nav ul {
+    display: inline-flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: greenyellow;
+}
+
+nav ul li {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    /*-----Displays an element as a block element (like <p>) -----*/
+    color: black;
+    text-decoration: none;
+    /*-----options: none|underline|overline|line-through|initial|inherit -----*/
+    font-size: .8rem;
+    font-weight: 400;
+    padding: .5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li.active a {
+    background-color: #89a236;
+}
+
+nav ul li a:hover {
+    background-color: #89a236;
+}
+
+/* MAIN  */
+
+main {
+    min-height: 5em;
+}
+
+main h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 1rem 0 0 2%;
+    margin: 0;
+    color: #89a236;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 0 0 2%;
+    margin: 0;
+    color: black;
+}
+
+main figure {
+    width: 100%;
+
+}
+
+main figure img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+
+}
+
+main ul.weatherInfo {
+    padding-left: 2%;
+    margin: 0;
+}
+
+main ul.weatherInfo li {
+    list-style-type: circle;
+    line-height: 160%;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+main ul.weatherInfo li strong {
+    font-weight: 400;
+    color: #89a236
+}
+
+.hideSmall {
+    display: none;
+}
+
+/*  FOOTER  */
+
+footer {
+    margin: 1rem 0;
+    clear: both;
+    background-color: #89a236;
+}
+
+footer p {
+    text-align: center;
+    padding: 0.5em;
+    margin: 0;
+    color: black;
+    font-size: .75rem;
+}
+
+/*----- grid con las imagenes -----*/
+
+main.gallerycontainer {
+    width: 94vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2vw;
+    margin: 7px;
+}
+
+main.gallerycontainer figure:hover {
+    box-shadow: 3px 3px 3px #a2a0bb;
+}
+
+main.gallerycontainer figure {
+    margin: 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main.gallerycontainer figure img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+/*----- OTHER -----*/
+
+h3 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 2%;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    font-size: 1em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 2%;
+    margin-right: 0;
+    font-weight: lighter;
+
+
+    fieldset {
+        background-color: yellowgreen;
+        border-radius: 1em;
+        margin: 1.5em 3px;
+        border: 1px solid green;
+    }
+
+    legend {
+
+        color: darkslategrey;
+        background-color: #E0F3A2;
+        border-radius: 1em;
+        margin-left: 1%;
+        padding: 1em;
+        border: #89a236 solid 1px;
+    }
+
+    label {
+        display: block;
+        margin: .5em;
+
+    }
+
+    label span {
+        display: block;
+
+
+
+    }
+
+
+
+    .otrocoso {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 10px solid white;
+    }
+
+    .fotito {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        border: 10px solid white;
+    }
+
+
+    .articulo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 10px solid white;
+    }
+
+    /*----- The navigation: Force an Element To Self-Clear its Children -----*/
+    .navigation:after,
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }

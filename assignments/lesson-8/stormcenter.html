@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>📡Radar Weather Page - Thank you page | Radar web page</title>
+    <meta name="author" content="Walter Valdez">
+    <meta name="description" content="thank you web page for the Franklin Weather Page - CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
+
+
+
+    <!-- This is to avoid the font from enlarging when the phone is sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- tablet -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- desktop or notebook -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- Hamburguesa-->
+    <link href="styles/hamburger.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>📡Radar</h1>
+        <h2>Forecast for the Franklin, Greenville and Springfield area.</h2 <div class="hamburger" onclick="toggleHam()"></div>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <!--<div class="hamburger" onclick="toggleHam()"></div>-->
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <!-- Links  -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="franklin-7.html">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Content -->
+
+    <article>
+        <h3>Storm, tornado, hail, hurricane or any othe unusual weather report</h3>
+        <p>When to send a storm report?
+
+When you can do safely, please send us a report when you observe unusual weather</p>
+    </article>
+    <br>
+
+    <form action="thankyou.html" method="get">
+        <fieldset>
+            <legend>Report information:</legend>
+            
+            <label><span>Full name:</span> <input type="text" pattern="[a-zA-Z ]{5,}" name="fullname" placeholder="Enter letters only" required=""></label>
+            
+            <label><span>E-mail:</span><input type="email" name="mail" placeholder="your@mail.com"></label>
+            
+            <label><span>Phone number: </span><input type="tel" name="phone" required=""></label>
+            
+            <label><span>Zip Code: </span><input type="number" name="zipcode" required=""></label>
+            
+            <label><span>Storm Date: </span><input type="date" name="stormdate"></label>
+            
+            <label><span>Storm Type: </span><input type="text" list="types" name="type"></label>
+            
+            <datalist id="types">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+            </datalist>
+
+        
+            
+
+            <!-- This numbered range labels are not supported in all the browsers yet-->
+
+            <label><span>Storm Severity:</span></label>
+            <input type="range" list="tickmarks">
+
+            <datalist id="tickmarks">
+  <option value="1" label="1">
+  <option value="10" label="2">
+  <option value="20" label="3">
+  <option value="30" label="4">
+  <option value="40" label="5">
+  <option value="50" label="6">
+  <option value="60" label="7">
+  <option value="70" label="8">
+  <option value="80" label="9">
+  <option value="90" label="10">
+
+</datalist>
+            
+            
+
+
+
+
+            <label><span>Storm Region: </span><select name="stormregion">
+                <option disabled="" selected="">Select Region...</option>
+                <option value="Franklin">Franklin</option>
+                <option value="Greenville">Greenville</option>
+                <option value="Sprinfield">Springfield</option>
+            </select></label>
+
+
+
+
+            <label><span>User in Danger: </span><input type="radio" name="userindanger" value="yes">Yes</label>
+            <label><input type="radio" name="userindanger" value="maybe">Maybe</label>
+            <label><input type="radio" name="userindanger" value="no">No</label>
+
+
+            <label><span>Comments: </span><textarea name="comments"></textarea></label>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <!-- end of the content -->
+
+
+    <footer>
+        <p>&copy; 2018 Radar 123 Main St.- Franklin, MU 83454-(999)999-9999- Contact: etc@etc.com - Franklin Weather page | <span id="date"></span></p>
+        <script type="text/javascript" src="scripts/hamburger.js">
+
+
+        </script>
+        <script type="text/javascript" src="scripts/currentDate.js">
+
+
+        </script>
+    </footer>
+
+</body>
+
+</html>
