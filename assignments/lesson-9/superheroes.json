@@ -1,12 +1,13 @@
 {
-  "squadName" : "FUNCAAAAAAAAAAAAAA",
+  "squadName" : "My Favorite Airplanes",
   "homeTown" : "Metro City",
   "formed" : 2016,
   "secretBase" : "Super tower",
   "active" : true,
   "members" : [
     {
-      "name" : "Molecule Man",
+      "name" : "North American P-51 Mustang
+",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
       "powers" : [
@@ -16,7 +17,8 @@
       ]
     },
     {
-      "name" : "Madame Uppercut",
+      "name" : "Lockheed P-38 Lightning
+",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
       "powers" : [
@@ -26,8 +28,9 @@
       ]
     },
     {
-      "name" : "Eternal Flame",
-      "age" : 1000000,
+      "name" : "Chance Vought F4U Corsair
+",
+      "age" : 29 May 1940,
       "secretIdentity" : "Unknown",
       "powers" : [
         "Immortality",
