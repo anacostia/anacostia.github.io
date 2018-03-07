@@ -1,13 +1,12 @@
 {
-  "squadName" : "My Favorite Airplanes",
+  "squadName" : "Super hero squad",
   "homeTown" : "Metro City",
   "formed" : 2016,
   "secretBase" : "Super tower",
   "active" : true,
   "members" : [
     {
-      "name" : "North American Mustang
-",
+      "name" : "Molecule Man",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
       "powers" : [
@@ -17,8 +16,7 @@
       ]
     },
     {
-      "name" : "Lockheed  Lightning
-",
+      "name" : "Madame Uppercut",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
       "powers" : [
@@ -28,9 +26,8 @@
       ]
     },
     {
-      "name" : "Chance Vought  Corsair
-",
-      "age" : 1940,
+      "name" : "Eternal Flame",
+      "age" : 1000000,
       "secretIdentity" : "Unknown",
       "powers" : [
         "Immortality",
