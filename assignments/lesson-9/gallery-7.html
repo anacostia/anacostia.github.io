@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>📡Radar Weather Page - Image gallery for Franklin | Radar web page</title>
+    <meta name="author" content="Walter Valdez">
+    <meta name="description" content="Image gallery for the Franklin Weather Page - CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
+
+
+
+    <!-- This is to avoid the font from enlarging when the phone is sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone -->
+    <link href="styles/main-5.css" rel="stylesheet">
+    <!-- tablet -->
+    <link href="styles/medium-5.css" rel="stylesheet">
+    <!-- desktop or notebook -->
+    <link href="styles/large-5.css" rel="stylesheet">
+    <!-- Hamburguesa-->
+    <link href="styles/hamburger.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>📡Radar</h1>
+        <h2>Forecast for the Franklin, Greenville and Springfield area.</h2 <div class="hamburger" onclick="toggleHam()"></div>
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+        <!--<div class="hamburger" onclick="toggleHam()"></div>-->
+        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+    </header>
+
+    <!-- Links  -->
+    <nav>
+        <ul class="navigation">
+            <li><a href="franklin-7.html">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="#">Storm center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Content -->
+   
+        <main class="gallerycontainer">
+            <figure>
+                <img src="images/uno.jpg" alt="A nice sunny landscape after the rain">
+                <figcaption>Watercolor sky
+awaits the painter’s last touch
+Just before sunrise.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/dos.jpg" alt="Thunder in the sky">
+                <figcaption>Gray clouds clash above With the sound of crashing surf Summer thunderstorm. </figcaption>
+            </figure>
+            <figure>
+                <img src="images/tres.jpg" alt="Cloudy sky">
+                <figcaption>January thaw
+A thick line of dark gray clouds
+Recedes like the tide.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cuatro.jpg" alt="Skyline">
+                <figcaption>Skyline emerging
+Grays of clouds too light for rain
+make the steeple pop</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cinco.jpg" alt="Mountains">
+                <figcaption>somewhere in their peaks
+mountains covet their secrets
+winds cannot whisper</figcaption>
+            </figure>
+            <figure>
+                <img src="images/seis.jpg" alt="Rainy day">
+                <figcaption>She soaks up the rain
+ with arms outstretched, finding bliss
+ in  nature's  baptism</figcaption>
+            </figure>
+        </main>
+        <!-- end of the content -->
+
+
+        <footer>
+            <p>&copy; 2018 Radar 123 Main St.- Franklin, MU 83454-(999)999-9999- Contact: etc@etc.com - Franklin Weather page | <span id="date"></span></p>
+            <script type="text/javascript" src="scripts/hamburger.js">
+
+
+            </script>
+            <script type="text/javascript" src="scripts/currentDate.js">
+
+
+            </script>
+        </footer>
+
+</body>
+
+</html>
