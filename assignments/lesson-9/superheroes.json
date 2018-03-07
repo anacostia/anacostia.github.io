@@ -1,15 +1,15 @@
 {
-  "squadName" : "QUE LO TIRO",
-  "homeTown" : "refresco",
-  "formed" : 1111,
+  "squadName" : "MY FAVORITE AIRPLANES",
+  "homeTown" : "Walter Valdez",
+  "course" : "CIT 230" ,
   "secretBase" : "Super tower",
   "active" : true,
-  "members" : [
+  "airplanes" : [
     {
       "name" : "Molecule Man",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
-      "powers" : [
+      "specs" : [
         "Radiation resistance",
         "Turning tiny",
         "Radiation blast"
@@ -19,7 +19,7 @@
       "name" : "Madame Uppercut",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
-      "powers" : [
+      "specs" : [
         "Million tonne punch",
         "Damage resistance",
         "Superhuman reflexes"
@@ -29,7 +29,7 @@
       "name" : "Eternal Flame",
       "age" : 1000000,
       "secretIdentity" : "Unknown",
-      "powers" : [
+      "specs" : [
         "Immortality",
         "Heat Immunity",
         "Inferno",
