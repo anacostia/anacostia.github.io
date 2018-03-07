@@ -2,11 +2,11 @@
   "squadName" : "MY FAVORITE AIRPLANES",
   "student" : "Walter Valdez",
   "course" : "CIT 230" ,
-  "secretBase" : "Super tower",
   "active" : true,
   "airplanes" : [
     {
-      "name" : "Molecule Man",
+      "name" : "North American P-51 Mustang
+",
       "age" : 29,
       "secretIdentity" : "Dan Jukes",
       "specs" : [
@@ -16,7 +16,8 @@
       ]
     },
     {
-      "name" : "Madame Uppercut",
+      "name" : "Lockheed P-38 Lightning
+",
       "age" : 39,
       "secretIdentity" : "Jane Wilson",
       "specs" : [
@@ -26,7 +27,8 @@
       ]
     },
     {
-      "name" : "Eternal Flame",
+      "name" : "Vought F4U Corsair
+",
       "age" : 1000000,
       "secretIdentity" : "Unknown",
       "specs" : [
