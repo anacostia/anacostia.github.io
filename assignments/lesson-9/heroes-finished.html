@@ -6,8 +6,8 @@
 
     <title>Superheroes - Walter Valdez - CIT 230</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -17,13 +17,16 @@
     </header>
 
     <section>
-
+<div class="hexagon">
+  <div class="hexTop"></div>
+  <div class="hexBottom"></div>
+</div>
     </section>
 
     <script>
         var header = document.querySelector('header');
         var section = document.querySelector('section');
-        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        var requestURL = 'https://anacostia.github.io/assignments/lesson-9/scripts/superheroes.json';
         var request = new XMLHttpRequest();
         request.open('GET', requestURL);
         request.responseType = 'json';
