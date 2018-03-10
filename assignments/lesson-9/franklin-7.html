@@ -27,7 +27,6 @@
     <link href="styles/large-5.css" rel="stylesheet">
     <!-- Hamburguesa-->
     <link href="styles/hamburger.css" rel="stylesheet">
-<script type="text/javascript" src="scripts/windchill.js"></script>
 
 </head>
 
@@ -46,8 +45,8 @@
 		<!-- Links  -->
 		<nav>
 			<ul class="navigation">
-				<li><a href="#">Home</a></li>
-				<li class="active"><a href="#">Franklin</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="franklin-7.html">Franklin</a></li>
 				<li><a href="#">Greenville</a></li>
 				<li><a href="#">Springfield</a></li>
 				<li><a href="#">Storm center</a></li>
@@ -58,69 +57,25 @@
 
 		<!-- Content -->
 		<main>
-			<h1>Franklin Weather</h1>
-			<ul class="weatherInfo">
-				<li>Summary: <strong>☀Sunny</strong></li>
-				<li>High: <strong>90°F</strong></li>
-				<li>Low: <strong>66°F</strong></li>
-				<li>Precipitation: <strong>0%</strong></li>
-				<li>Max Wind: <strong>💨5 mph SW</strong></li>
-			</ul>
-			<picture class="fotito"> 
-				<source media="(max-width: 30em)" srcset="images/small.jpg">
-				<source media="(max-width: 64em)" srcset="images/medium.jpg">
-				<img src="images/large.jpg" alt="Franklin Weather" class="center"> 
-			</picture>
+			
+        <h1>Weather Conditions for <span id="place"> City, State </span></h1>   
+            
+                    <h1>Condition: <span id="icon"> i </span></h1>   
 
-			<h2 class="hideSmall">10 Day forecast</h2>
+            <h1><img id="w_icon" src="" alt"current weather"><h1>
 
-        <table class="forecast hideSmall">
-            <thead>
-                <tr>
-                    <th>Day 1</th>
-                    <th>Day 2</th>
-                    <th>Day 3</th>
-                    <th>Day 4</th>
-                    <th>Day 5</th>
-                    <th>Day 6</th>
-                    <th>Day 7</th>
-                    <th>Day 8</th>
-                    <th>Day 9</th>
-                    <th>Day 10</th>
-                </tr>
-            </thead>
+            
+            <h1>Current temperature <span id="temp">90</span>&deg;</h1> 
+            
+            <h1>Feels like <span id="feels">90</span>&deg;</h1>
+                
+                            <h1>Relative humidity:  <span id="humidity">90</span></h1>
 
-            <tbody>
-                <tr>
-                    <td>89°F</td>
-                    <td>87°F</td>
-                    <td>78°F</td>
-                    <td>75°F</td>
-                    <td>72°F</td>
-                    <td>72°F</td>
-                    <td>79°F</td>
-                    <td>83°F</td>
-                    <td>85°F</td>
-                    <td>89°F</td>
-                </tr>
-            </tbody>
+            
+            <script type="text/javascript" src="scripts/main.js"></script>
 
-        </table>
-        <br>
-        <!-- Windchill -->
-        <div class="conditions">
-           
-            <p>💨🌡️ Windchill calculator </p>
-            <br>
-            <p>Temperature:
-                <input type="text" size="4" id="temperature"> Wind Speed:
-                <input type="text" size="4" id="windspeed">
-            </p>
-            <br>
-            <button type="button" onclick="doInputOutput()">Caculate</button>
-            <div id="chill"></div>
-        </div>
-        <!-- Windchill -->
+            
+            
         <br>
         <article>
             <h3>Franklin Breaks Record</h3>
@@ -149,12 +104,11 @@
 
 
             </script>
-            <script type="text/javascript" src="scripts/currentDate.js">
-
-
-            </script>
+            
+            
         </footer>
 
 </body>
+            
 
 </html>

@@ -20,10 +20,14 @@ html {
 /* BODY  */
 
 body {
+    
     font-size: 16px;
     font-family: 'Crete Round', serif;
     font-weight: 300;
     color: black;
+    
+    
+    
 }
 
 /* IF I USE http://www.css-validator.org THIS VALIDATES, IF I USE W3 I GOT ONE ERROR BUT THAT SEEMS TO BE AN ERROR WITH THE VALIDATOR */
@@ -32,6 +36,9 @@ body {
 
 header {
     background-color: #89a236;
+    width: 100%;
+    border-radius: 5px;
+
     padding: .5rem 0 .5rem 2%;
 }
 
@@ -60,6 +67,8 @@ nav {
     flex-flow: column;
     align-items: flex-start;
     background-color: #E0F3A2;
+        border-radius: 5px;
+
     font-size: 18px;
 
 }
@@ -103,99 +112,81 @@ nav ul li a:hover {
 
 /* MAIN  */
 
-main {
-    min-height: 5em;
+main > h1 {
+    text-align: center;
+    color: black;
+}
+main > h2 {
+    text-align: center;
+    
 }
 
-main h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    padding: 1rem 0 0 2%;
-    margin: 0;
+main section.jsondata {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+
+main article {
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 1.8vw;
+}
+
+main#index article, main#stormcenter article {
+    margin: 8px;
+    border: 3px solid #89a236;
+}
+
+section h2 {
+    color: limegreen;
+}
+
+section.jsondata h2, main#thankyoupage h2 {
+    color: black;
+}
+
+article h3 {
     color: #89a236;
 }
 
+main section.jsondata article ul {
+    padding: 0;
+}
+
+main section.jsondata article ul li {
+    list-style-type: none;
+    margin: 8px;
+}
+
 main h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    padding: 1rem 0 0 2%;
-    margin: 0;
-    color: black;
-}
-
-main figure {
-    width: 100%;
-
-}
-
-main figure img {
-    max-width: 100%;
-    height: auto;
-    padding: 5px;
-
-}
-
-main ul.weatherInfo {
-    padding-left: 2%;
-    margin: 0;
-}
-
-main ul.weatherInfo li {
-    list-style-type: circle;
-    line-height: 160%;
-    margin-left: 20px;
-    font-size: 1.2rem;
-}
-
-main ul.weatherInfo li strong {
-    font-weight: 400;
-    color: #89a236
-}
-
-.hideSmall {
-    display: none;
-}
-
-/*  FOOTER  */
-
-footer {
-    margin: 1rem 0;
-    clear: both;
-    background-color: #89a236;
-}
-
-footer p {
     text-align: center;
-    padding: 0.5em;
-    margin: 0;
-    color: black;
-    font-size: .75rem;
 }
 
-/*----- grid con las imagenes -----*/
-
-main.gallerycontainer {
-    width: 94vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2vw;
-    margin: 7px;
+div.maininfo {
+    display: inline-flex;
+    flex-flow: column;
 }
 
-main.gallerycontainer figure:hover {
-    box-shadow: 3px 3px 3px #a2a0bb;
-}
-
-main.gallerycontainer figure {
-    margin: 0;
-    text-align: center;
-    border-radius: 8px;
-}
-
-main.gallerycontainer figure img {
+main div.maininfo figure {
+    margin: 5px;
     width: 100%;
-    border-radius: 7px;
 }
+
+main div.maininfo figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 /*----- OTHER -----*/
 
@@ -249,6 +240,39 @@ p {
 
     }
 
+
+    .town-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .town-data h2 {
+        font-family: 'Handlee', cursive;
+        font-size: 135%;
+        margin-top: -2em;
+        margin-left: .75em;
+        color: #ffe058;
+    }
+
+    .town-data article {
+        font-size: 85%;
+        margin-top: -0.5em;
+        margin-right: .5em;
+        margin-left: -0.25em;
+    }
+
+    .town-data article > p {
+        margin-top: -0.5em;
+        margin-right: .25em;
+        font-size: 80%;
+    }
+
+    .town-data article > ul {
+        font-size: 80%;
+        margin-left: -1.25em;
+    }
 
 
     .otrocoso {

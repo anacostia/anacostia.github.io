@@ -1,11 +1,11 @@
-                        @media only screen and (min-width: 1024px) {
+                            @media only screen and (min-width: 1024px) {
                             /*-----Body -----*/
                             body {
                                 font-size: 16px;
                                 font-family: 'Crete Round', serif;
                                 font-weight: 300;
                                 color: black;
-                                    {
+                                {
                                     flex-flow: column;
                                     margin-bottom: 25px;
                                 }
@@ -27,63 +27,7 @@
                             }
                             /* MAIN  */
                             /* Parte que agregue, veamos si funciona  */
-                            main.gallerycontainer {
-                                width: 97vw;
-                                grid-template-columns: repeat(1, 1fr);
-                                grid-gap: 1vw;
-                            }
-                            main.gallerycontainer figure:hover {
-                                box-shadow: 10px 10px 10px #a2a0bb;
-                            }
-                            /* Parte que agregue, veamos si funciona  */
-                            main {
-                                min-height: 5em;
-                            }
-                            main h1 {
-                                font-size: 2rem;
-                                font-weight: 400;
-                                padding: 1rem 0 0 2%;
-                                margin: 2px;
-                                color: #89a236;
-                            }
-                            main h2 {
-                                font-size: 1.5rem;
-                                font-weight: 400;
-                                padding: 1rem 0 0 2%;
-                                margin: 0;
-                                color: black;
-                            }
-                            main h3 {
-                                font-size: 1.5rem;
-                                font-weight: 400;
-                                padding: 1rem 0 0 2%;
-                                margin: 0;
-                                color: black;
-                            }
-                            main figure {
-                                width: 100%;
-                                margin-left: auto;
-                                margin-right: auto;
-                            }
-                            main figure img {
-                                width: 100%;
-                                margin-left: auto;
-                                margin-right: auto;
-                            }
-                            main ul.weatherInfo {
-                                padding-left: 2%;
-                                margin: 2px;
-                            }
-                            main ul.weatherInfo li {
-                                list-style-type: circle;
-                                line-height: 160%;
-                                margin-left: 20px;
-                                font-size: 1.2rem;
-                            }
-                            main ul.weatherInfo li strong {
-                                font-weight: 400;
-                                color: #89a236
-                            }
+                            
                             /*  FOOTER  */
                             footer {
                                 margin: 1rem 0;
@@ -107,7 +51,6 @@
                                 margin-right: 0;
                                 font-weight: bold;
                             }
-
                             p {
                                 display: block;
                                 font-size: 1em;
@@ -117,17 +60,13 @@
                                 margin-right: 0;
                                 font-weight: lighter;
                             }
-
-
                             fieldset {
                                 background-color: yellowgreen;
                                 border-radius: 1em;
                                 margin: 1.5em 3px;
                                 border: 1px solid green;
                             }
-
                             legend {
-
                                 color: darkslategrey;
                                 background-color: #E0F3A2;
                                 border-radius: 1em;
@@ -135,41 +74,74 @@
                                 padding: 1em;
                                 border: #89a236 solid 1px;
                             }
-
                             label {
                                 display: block;
                                 margin: .5em;
-
                             }
-
                             label span {
                                 display: block;
-
-
-
                             }
-
+                            article h3 {
+                                margin-top: 1em;
+                                margin-left: .3em;
+                                font-size: 175%;
+                            }
                             .otrocoso {
                                 display: flex;
                                 justify-content: center;
                                 flex-wrap: wrap;
                                 border: 10px solid white;
                             }
-
                             .fotito {
                                 display: flex;
                                 justify-content: left;
                                 flex-wrap: wrap;
                                 border: 10px solid white;
                             }
-
-
                             .articulo {
                                 display: flex;
                                 justify-content: center;
                                 flex-wrap: wrap;
                                 border: 10px solid white;
                             }
+                                
+                                
+                                
+                                
+                          /*----- veamos si funciona-----*/      
+                                
+                                
+                                
+                                div.maininfo {
+        flex-flow: column;
+        margin-bottom: 25px;
+    }
+
+    main div.maininfo figure {
+        width: 100%;
+    }
+    section.info {
+        display: inline-flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section.info h2 {
+        width: 100vw;
+    }
+
+    main.gallerycontainer {
+        width: 97vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1vw;
+    }
+
+   
+                                
+                            /*----- veamos si funciona-----*/      
+                              
+                                
                             /*----- The navigation: Force an Element To Self-Clear its Children -----*/
                             .navigation:after,
                             .row:after {
