@@ -5,9 +5,9 @@
 
     <meta charset="utf-8">
 
-    <title>📡Radar Weather Page - Forecast for Franklin | Radar</title>
+    <title>📡Radar Weather Page - Forecast for Greenville | Radar</title>
     <meta name="author" content="Walter Valdez">
-    <meta name="description" content="Franklin Weather Page for CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
+    <meta name="description" content="Greenville Weather Page for CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
 
 
 
@@ -35,7 +35,7 @@
     <header class="site-header">
         <h1>📡Radar</h1>
         <h2>Forecast for the Franklin, Greenville and Springfield area.</h2
-			<div class="hamburger" onclick="toggleHam()">
+			<div class="hamburger" onclick="toggleHam()"></div>
         
 			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
 	<!--<div class="hamburger" onclick="toggleHam()"></div>-->
@@ -46,7 +46,7 @@
 		<nav>
 			<ul id="mainmenu" class="navigation">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="franklin.html">Franklin</a></li>
+				<li class="active"><a href="franklin.html">Franklin</a></li>
 				<li><a href="greenville.html">Greenville</a></li>
 				<li><a href="springfield.html">Springfield</a></li>
 				<li><a href="stormcenter.html">Storm center</a></li>
@@ -72,29 +72,25 @@
                             <h1>Relative humidity:  <span id="humidity">90</span></h1>
 
             
-            <script type="text/javascript" src="scripts/main.js"></script>
+            <script type="text/javascript" src="scripts/maingreenville.js"></script>
 
             
             
         <br>
         <article>
-            <h3>Franklin Breaks Record</h3>
+            <h3>Greenville, a wonderful Texas town.</h3>
             <br>
-            <img src="images/foto6.jpg" alt="Another Franklin picture" class="otrocoso">
+            <img src="images/greenville.jpg" alt="Another Greenville picture" class="otrocoso">
             <p class="articulo">
-                
-                Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.
-                <br>
-                
-                The town was founded by Mormon pioneers led by Thomas S. Smart on April 14, 1860 in what was then Washington Territory, although at the time it was believed the settlement was within the bounds of Utah Territory. The town was named for Franklin Richards, an Apostle for The Church of Jesus Christ of Latter-day Saints. Franklin is the first permanent European settlement in present-day Idaho. Its political status remained ambiguous until an 1872 survey determined the townsite was in Idaho Territory about 1-mile (1.6 km) north of the Utah Territory border. The area within the town limits was platted into square blocks in 1864.
-<br>
-Part of the 2004 comedy film Napoleon Dynamite were shot near Franklin. The chicken farm scenes were filmed on Ritewood Egg Farms property, and the supervisor's character is loosely based on Marlow Woodward, a late Franklin resident and one of the farm's founders.
-                <br>
-                Franklin is located at 42°0′58″N 111°48′11″W (42.016039, -111.803101).[8] at an elevation of 4,501 feet (1,372 m) above sea level.
-<br>
-According to the United States Census Bureau, the city has a total area of 1.29 square miles (3.34 km2), of which, 1.26 square miles (3.26 km2) is land and 0.03 square miles (0.08 km2) is water.
-                
-                
+                Greenville was founded in 1846. The city was named after Thomas J. Green, a significant contributor to the establishment of Texas as a Republic. He later became a member of the Congress of the Republic of Texas. The city was almost named “Pinckneyville” in honor of James Pinckney Henderson, the first Governor of Texas.
+
+As the Civil War loomed, Greenville was divided over the issue of secession, as were several area towns and counties. Greenville attorney and State Senator Martin D. Hart was a prominent Unionist. He formed a company of men who fought for the Union in Arkansas, even as other Greenville residents fought for the Confederacy. The divided nature of Greenville, Hunt County and the State of Texas is noted by an historical marker in "The SPOT" Park at 2800 Lee Street in downtown Greenville. In the post-Civil War era, Greenville's economy became partly dependent on cotton as the local economy entered a period of transition.
+
+With a population of 12,384 in the 1920 census, the city, at one time, was the 20th largest in Texas.
+
+In World War II, the Mexican Escuadrón 201 was stationed in Greenville while training at nearby Majors Field.
+
+The town was also notorious for a large sign, installed on July 7, 1921 over Lee Street, the main street in the downtown district, between the train station and the bus station in the 1920s to 1960s. The sign read: "Welcome to Greenville, The Blackest Land, The Whitest People." According to history teacher Paul E. Sturdevant of Greenville, the original intent behind "the whitest people" was to define "the citizens of Greenville as friendly, trustworthy and helpful was sincere, and it was meant to include all citizens, regardless of race." In pre-civil rights America, the phrase "That's mighty white of you" meant that you were honest, not like suspect blacks. The sign thus acquired racial overtones, and the original sign was taken down and placed into storage on April 13, 1965, possibly at the urging of Texas Governor John Connally, who had made a visit to the town weeks before. In 1968, Greenville Sybil Maddux had the sign reinstalled, with the wording modified to read "The Greatest People"; the original sign is in the collection of the Audie Murphy American Cotton Museum.
                 <br>
                 <br>
             </p>
@@ -119,8 +115,7 @@ According to the United States Census Bureau, the city has a total area of 1.29 
             
             
         </footer>
-
-   <script>
+<script>
     var urlString, urlArray, pageHREF, menu, i, currentURL;
     urlString = document.location.href;
     urlArray = urlString.split('/');
@@ -136,9 +131,7 @@ According to the United States Census Bureau, the city has a total area of 1.29 
             }
         }
     }
-</script>             
-                
-                
+</script>
 </body>
             
 

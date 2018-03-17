@@ -1,151 +1,139 @@
-	@media only screen and (min-width: 1024px) {
-	/*-----Body -----*/
-	body {
-		font-size: 16px;
-		font-family: 'Crete Round', serif;
-		font-weight: 300;
-		color: black;
-		{
-			flex-flow: column;
-			margin-bottom: 25px;
-		}
-	}
-	/* IF I USE http://www.css-validator.org THIS VALIDATES, IF I USE W3 I GOT ONE ERROR BUT THAT SEEMS TO BE AN ERROR WITH THE VALIDATOR */
-	/* HEADER  */
-	.site-header {
-		background: #y89a236;
-		color: white;
-		display: flex;
-		align-items: center;
-	}
-	/* NAVIGATION  */
-	.navigation {
-		display: flex;
-		flex-flow: row wrap;
-		/* This aligns items to the end line on main-axis */
-		justify-content: flex-end;
-	}
-	/* MAIN  */
-        
-        
-       
-       main.gallerycontainer {
-           width: 97vw;
-           grid-template-columns: repeat(3, 1fr);
-           grid-gap: 1vw;
-       }
-
-       main.gallerycontainer figure:hover {
-           box-shadow: 10px 10px 10px #a2a0bb;
-       }
-        
-        
-        
-        
-    
-        
-        
-        
-	/* Parte que agregue, veamos si funciona  */
-	/*  FOOTER  */
-	footer {
-		margin: 1rem 0;
-		clear: both;
-		background-color: #89a236;
-	}
-	footer p {
-		text-align: center;
-		padding: 0.5em;
-		margin: 0;
-		color: black;
-		font-size: .75rem;
-	}
-	/*----- OTHER -----*/
-	h3 {
-		display: block;
-		font-size: 2em;
-		margin-top: 0.67em;
-		margin-bottom: 0.67em;
-		margin-left: 2%;
-		margin-right: 0;
-		font-weight: bold;
-	}
-	p {
-		display: block;
-		font-size: 1em;
-		margin-top: 0.67em;
-		margin-bottom: 0.67em;
-		margin-left: 2%;
-		margin-right: 0;
-		font-weight: lighter;
-	}
-	fieldset {
-		background-color: yellowgreen;
-		border-radius: 1em;
-		margin: 1.5em 3px;
-		border: 1px solid green;
-	}
-	legend {
-		color: darkslategrey;
-		background-color: #E0F3A2;
-		border-radius: 1em;
-		margin-left: 1%;
-		padding: 1em;
-		border: #89a236 solid 1px;
-	}
-	label {
-		display: block;
-		margin: .5em;
-	}
-	label span {
-		display: block;
-	}
-	article h3 {
-		margin-top: 1em;
-		margin-left: .3em;
-		font-size: 175%;
-	}
-	.otrocoso {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		border: 10px solid white;
-	}
-	.fotito {
-		display: flex;
-		justify-content: left;
-		flex-wrap: wrap;
-		border: 10px solid white;
-	}
-	.articulo {
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		border: 10px solid white;
-	}
-	/*----- veamos si funciona-----*/
-	div.maininfo {
-		flex-flow: column;
-		margin-bottom: 25px;
-	}
-	main div.maininfo figure {
-		width: 100%;
-	}
-	section.info {
-		display: inline-flex;
-		flex-flow: row wrap;
-		justify-content: space-around;
-		align-items: center;
-	}
-	section.info h2 {
-		width: 100vw;
-	}
-	
-	/*----- veamos si funciona-----*/
-	/*----- The navigation: Force an Element To Self-Clear its Children -----*/
-	.navigation:after,
-	.row:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
+	    @media only screen and (min-width: 1024px) {
+	    /*-----Body -----*/
+	    body {
+	        font-size: 16px;
+	        font-family: 'Crete Round', serif;
+	        font-weight: 300;
+	        color: black;
+	        {
+	            flex-flow: column;
+	            margin-bottom: 25px;
+	        }
+	    }
+	    /* IF I USE http://www.css-validator.org THIS VALIDATES, IF I USE W3 I GOT ONE ERROR BUT THAT SEEMS TO BE AN ERROR WITH THE VALIDATOR */
+	    /* HEADER  */
+	    .site-header {
+	        background: #y89a236;
+	        color: white;
+	        display: flex;
+	        align-items: center;
+	    }
+	    /* NAVIGATION  */
+	    .navigation {
+	        display: flex;
+	        flex-flow: row wrap;
+	        /* This aligns items to the end line on main-axis */
+	        justify-content: flex-end;
+	    }
+	    /* MAIN  */
+	    /* Parte que agregue, veamos si funciona  */
+	    /*  FOOTER  */
+	    footer {
+	        margin: 1rem 0;
+	        clear: both;
+	        background-color: #89a236;
+	    }
+	    footer p {
+	        text-align: center;
+	        padding: 0.5em;
+	        margin: 0;
+	        color: black;
+	        font-size: .75rem;
+	    }
+	    /*----- OTHER -----*/
+	    h3 {
+	        display: block;
+	        font-size: 2em;
+	        margin-top: 0.67em;
+	        margin-bottom: 0.67em;
+	        margin-left: 2%;
+	        margin-right: 0;
+	        font-weight: bold;
+	    }
+	    p {
+	        display: block;
+	        font-size: 1em;
+	        margin-top: 0.67em;
+	        margin-bottom: 0.67em;
+	        margin-left: 2%;
+	        margin-right: 0;
+	        font-weight: lighter;
+	    }
+	    fieldset {
+	        background-color: yellowgreen;
+	        border-radius: 1em;
+	        margin: 1.5em 3px;
+	        border: 1px solid green;
+	    }
+	    legend {
+	        color: darkslategrey;
+	        background-color: #E0F3A2;
+	        border-radius: 1em;
+	        margin-left: 1%;
+	        padding: 1em;
+	        border: #89a236 solid 1px;
+	    }
+	    label {
+	        display: block;
+	        margin: .5em;
+	    }
+	    label span {
+	        display: block;
+	    }
+	    article h3 {
+	        margin-top: 1em;
+	        margin-left: .3em;
+	        font-size: 175%;
+	    }
+	    .otrocoso {
+            float: left;
+	        display: flex;
+	        justify-content: center;
+	        flex-wrap: wrap;
+	        border: 10px solid white;
+	    }
+	    .fotito {
+	        display: flex;
+	        justify-content: left;
+	        flex-wrap: wrap;
+	        border: 10px solid white;
+	    }
+	    .articulo {
+	        display: flex;
+	        justify-content: center;
+	        flex-wrap: wrap;
+	        border: 10px solid white;
+	    }
+	    /*----- veamos si funciona-----*/
+	    div.maininfo {
+	        flex-flow: column;
+	        margin-bottom: 25px;
+	    }
+	    main div.maininfo figure {
+	        width: 100%;
+	    }
+	    section.info {
+	        display: inline-flex;
+	        flex-flow: row wrap;
+	        justify-content: space-around;
+	        align-items: center;
+	    }
+	    section.info h2 {
+	        width: 100vw;
+	    }
+	    /* Parte que agregue, veamos si funciona  */
+	    main.gallerycontainer {
+	        width: 97vw;
+	        grid-template-columns: repeat(3, 1fr);
+	        grid-gap: 1vw;
+	    }
+	    main.gallerycontainer figure:hover {
+	        box-shadow: 10px 10px 10px #a2a0bb;
+	    }
+	    /*----- The navigation: Force an Element To Self-Clear its Children -----*/
+	    .navigation:after,
+	    .row:after {
+	        content: "";
+	        display: table;
+	        clear: both;
+	    }

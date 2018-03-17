@@ -20,11 +20,11 @@
     <!-- Stylesheets -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone -->
-    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/main-5.css" rel="stylesheet">
     <!-- tablet -->
-    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/medium-5.css" rel="stylesheet">
     <!-- desktop or notebook -->
-    <link href="styles/large.css" rel="stylesheet">
+    <link href="styles/large-5.css" rel="stylesheet">
     <!-- Hamburguesa-->
     <link href="styles/hamburger.css" rel="stylesheet">
 
@@ -43,13 +43,13 @@
 
     <!-- Links  -->
     <nav>
-        <ul class="navigation">
-            <li><a href="franklin.html">Home</a></li>
-            <li class="active"><a href="#">Franklin</a></li>
-            <li><a href="#">Greenville</a></li>
-            <li><a href="#">Springfield</a></li>
-            <li><a href="#">Storm center</a></li>
-            <li><a href="#">Gallery</a></li>
+        <ul id="mainmenu" class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
         </ul>
 
     </nav>
@@ -97,6 +97,24 @@
         </script>
     </footer>
 
+    <script>
+    var urlString, urlArray, pageHREF, menu, i, currentURL;
+    urlString = document.location.href;
+    urlArray = urlString.split('/');
+    pageHREF = urlArray[urlArray.length - 1];
+
+    if (pageHREF !== "") {
+        menu = document.querySelectorAll('ul#mainmenu li a');
+        for (i = 0; i < menu.length; i++) {
+            currentURL = (menu[i].getAttribute('href'));
+            menu[i].parentNode.className = '';
+            if (currentURL === pageHREF) {
+                menu[i].parentNode.className = 'active';
+            }
+        }
+    }
+</script>
+    
 </body>
 
 </html>

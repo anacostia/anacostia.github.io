@@ -5,9 +5,9 @@
 
     <meta charset="utf-8">
 
-    <title>📡Radar Weather Page - Forecast for Franklin | Radar</title>
+    <title>📡Radar Weather Page - Forecast for Springfield | Radar</title>
     <meta name="author" content="Walter Valdez">
-    <meta name="description" content="Franklin Weather Page for CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
+    <meta name="description" content="Springfield Weather Page for CIT 230 class - Web Frontend Development at Brigham Young University - Idaho.">
 
 
 
@@ -35,7 +35,7 @@
     <header class="site-header">
         <h1>📡Radar</h1>
         <h2>Forecast for the Franklin, Greenville and Springfield area.</h2
-			<div class="hamburger" onclick="toggleHam()">
+			<div class="hamburger" onclick="toggleHam()"></div>
         
 			<button class="hamburger" onclick="toggleHam()">&#9776;</button>
 	<!--<div class="hamburger" onclick="toggleHam()"></div>-->
@@ -46,7 +46,7 @@
 		<nav>
 			<ul id="mainmenu" class="navigation">
 				<li><a href="index.html">Home</a></li>
-				<li><a href="franklin.html">Franklin</a></li>
+				<li class="active"><a href="franklin.html">Franklin</a></li>
 				<li><a href="greenville.html">Greenville</a></li>
 				<li><a href="springfield.html">Springfield</a></li>
 				<li><a href="stormcenter.html">Storm center</a></li>
@@ -72,7 +72,7 @@
                             <h1>Relative humidity:  <span id="humidity">90</span></h1>
 
             
-            <script type="text/javascript" src="scripts/main.js"></script>
+            <script type="text/javascript" src="scripts/mainspringfield.js"></script>
 
             
             
@@ -80,21 +80,21 @@
         <article>
             <h3>Franklin Breaks Record</h3>
             <br>
-            <img src="images/foto6.jpg" alt="Another Franklin picture" class="otrocoso">
+            <img src="images/springfield.jpg" alt="Another springfield picture" class="otrocoso">
             <p class="articulo">
-                
-                Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.
-                <br>
-                
-                The town was founded by Mormon pioneers led by Thomas S. Smart on April 14, 1860 in what was then Washington Territory, although at the time it was believed the settlement was within the bounds of Utah Territory. The town was named for Franklin Richards, an Apostle for The Church of Jesus Christ of Latter-day Saints. Franklin is the first permanent European settlement in present-day Idaho. Its political status remained ambiguous until an 1872 survey determined the townsite was in Idaho Territory about 1-mile (1.6 km) north of the Utah Territory border. The area within the town limits was platted into square blocks in 1864.
-<br>
-Part of the 2004 comedy film Napoleon Dynamite were shot near Franklin. The chicken farm scenes were filmed on Ritewood Egg Farms property, and the supervisor's character is loosely based on Marlow Woodward, a late Franklin resident and one of the farm's founders.
-                <br>
-                Franklin is located at 42°0′58″N 111°48′11″W (42.016039, -111.803101).[8] at an elevation of 4,501 feet (1,372 m) above sea level.
-<br>
-According to the United States Census Bureau, the city has a total area of 1.29 square miles (3.34 km2), of which, 1.26 square miles (3.26 km2) is land and 0.03 square miles (0.08 km2) is water.
-                
-                
+                Springfield was settled when Elias and Mary Briggs and their family arrived in 1848. They were among the first party to travel to the region via the "Southern Route" by Klamath Lake, over the Cascades, into the Rogue Valley, then north to the Willamette Valley. Elias Briggs along with William Stevens ran a ferry on the nearby Willamette River.
+
+According to donation land claim records, Stevens was the first settler to stake a claim in the Springfield locale, arriving in October 1847. He commenced building a house with his three oldest sons, and when the house was completed in December, the rest of his family joined him on Christmas Day that year.
+
+Another early arrival in the Springfield vicinity was Captain Felix Scott, Sr. who settled between the McKenzie and Willamette rivers in 1847.
+
+In 1854 Springfield School District No. 19 was formed. A small schoolhouse was built near the corner of south 7th and B streets; it served the community until the 1880s. Miss Agnes Stewart, a young woman from Pennsylvania, was the first teacher. She had arrived in Springfield via the Lost Wagon Train of 1853.
+
+In 1871 the main line of the Oregon and California Railroad bypassed Springfield for Eugene. The story goes that a group of prominent Eugene businessmen paid railroad financier Ben Holladay $40,000 to bypass Springfield by crossing the Willamette River near Harrisburg instead of Springfield. Thus began a rivalry that lasts up to the present day.
+
+Springfield was incorporated as a city in 1885. Albert Walker, a blacksmith in town, was Springfield's first mayor.
+
+In May 1992 the municipality became the first in the United States to include anti-gay legislation in its city charter after a campaign by the Oregon Citizens Alliance. However, the state legislature later passed a law that prevented anti-gay ordinances from being enforced.
                 <br>
                 <br>
             </p>
@@ -119,8 +119,7 @@ According to the United States Census Bureau, the city has a total area of 1.29 
             
             
         </footer>
-
-   <script>
+<script>
     var urlString, urlArray, pageHREF, menu, i, currentURL;
     urlString = document.location.href;
     urlArray = urlString.split('/');
@@ -136,7 +135,8 @@ According to the United States Census Bureau, the city has a total area of 1.29 
             }
         }
     }
-</script>             
+</script>
+                
                 
                 
 </body>
