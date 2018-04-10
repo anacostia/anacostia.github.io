@@ -5,17 +5,10 @@
                                 font-family: 'Crete Round', serif;
                                 font-weight: 300;
                                 color: black;
-                               background-image: url("https://i.imgur.com/M3CnpB8.jpg");
+                                background-image: url("https://i.imgur.com/M3CnpB8.jpg");
                                 background-size: 100%;
-
                             }
-
-                            .site-header {
-                                background: #y89a236;
-                                color: white;
-                                display: flex;
-                                align-items: center;
-                            }
+                            
                             /* NAVIGATION  */
                             .navigation {
                                 display: flex;
@@ -27,7 +20,7 @@
                             /* Parte que agregue, veamos si funciona  */
                             main.gallerycontainer {
                                 width: 97vw;
-                                grid-template-columns: repeat(1, 1fr);
+                                grid-template-columns: repeat(3, 1fr);
                                 grid-gap: 1vw;
                             }
                             main.gallerycontainer figure:hover {
@@ -68,30 +61,18 @@
                                 margin-left: auto;
                                 margin-right: auto;
                             }
-                            main ul.weatherInfo {
-                                padding-left: 2%;
-                                margin: 2px;
-                            }
-                            main ul.weatherInfo li {
-                                list-style-type: circle;
-                                line-height: 160%;
-                                margin-left: 20px;
-                                font-size: 1.2rem;
-                            }
-                            main ul.weatherInfo li strong {
-                                font-weight: 400;
-                                color: #89a236
-                            }
+                            
                             /*  FOOTER  */
-                            footer {
-                                margin: 1rem 0;
-                                clear: both;
-                                background-color: #89a236;
-                            }
-                            footer p {
-                                text-align: center;
-                                padding: 0.5em;
-                                margin: 0;
-                                color: black;
-                                font-size: .75rem;
-                            }
+                            text-align: center;
+                            padding: 1em;
+                            margin: 0;
+                            color: white;
+                            font-size: 1rem;
+                        }
+                        footer p {
+                            text-align: center;
+                            padding: 1em;
+                            margin: 0;
+                            color: whitesmoke;
+                            font-size: 1rem;
+                        }
