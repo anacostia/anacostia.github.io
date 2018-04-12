@@ -1,4 +1,4 @@
-                        @media only screen and (min-width: 1024px) {
+                            @media only screen and (min-width: 1024px) {
                             /*-----Body -----*/
                             body {
                                 font-size: 16px;
@@ -8,7 +8,6 @@
                                 background-image: url("https://i.imgur.com/M3CnpB8.jpg");
                                 background-size: 100%;
                             }
-                            
                             /* NAVIGATION  */
                             .navigation {
                                 display: flex;
@@ -61,18 +60,12 @@
                                 margin-left: auto;
                                 margin-right: auto;
                             }
-                            
                             /*  FOOTER  */
-                            text-align: center;
-                            padding: 1em;
-                            margin: 0;
-                            color: white;
-                            font-size: 1rem;
-                        }
-                        footer p {
-                            text-align: center;
-                            padding: 1em;
-                            margin: 0;
-                            color: whitesmoke;
-                            font-size: 1rem;
-                        }
+                            footer p {
+                                text-align: center;
+                                padding: 1em;
+                                margin: 0;
+                                color: whitesmoke;
+                                font-size: 1rem;
+                            }
+}

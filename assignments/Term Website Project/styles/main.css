@@ -12,13 +12,18 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 html {
     -webkit-text-size-adjust: none;
 }
 
 /* BODY  */
 
+body {
+    font-size: 16px;
+    font-family: 'Crete Round', serif;
+    font-weight: 300;
+    color: black;
+}
 body {
     background-repeat: repeat;
     background-image: url('https://i.imgur.com/vlQtrod.jpg');
@@ -32,12 +37,9 @@ body {
     }
 }
 
-
-
 /* HEADER  */
 
 header {}
-
 header h1 {
     font-size: 3rem;
     font-weight: 800;
@@ -46,23 +48,21 @@ header h1 {
     font-family: 'Permanent Marker', cursive;
     padding: 5px
 }
-
 header img {
-    display: inline-flex;
+    height: 70px;
+    width: 70px;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 /* NAVIGATION  */
 
 nav {}
-
 nav ul {}
-
 nav ul li {}
-
 nav ul li a {}
-
 nav ul li.active a {}
-
 nav ul li a:hover {
     background-color: limegreen;
 }
@@ -70,15 +70,11 @@ nav ul li a:hover {
 /* MAIN  */
 
 main {}
-
 main h1 {}
-
 main h2 {}
-
 main figure {
     width: 100%;
 }
-
 main figure img {
     max-width: 100%;
     height: auto;
@@ -92,9 +88,7 @@ footer {
     clear: both;
     background-color: black;
     opacity: 0.7;
-
 }
-
 footer p {
     text-align: center;
     padding: 1em;
@@ -112,23 +106,21 @@ main.gallerycontainer {
     grid-gap: 2vw;
     margin: 7px;
 }
-
 main.gallerycontainer figure:hover {
     box-shadow: 3px 3px 3px #a2a0bb;
 }
-
 main.gallerycontainer figure {
     margin: 0;
     text-align: center;
     border-radius: 8px;
 }
-
 main.gallerycontainer figure img {
     width: 100%;
     border-radius: 7px;
 }
 
 /*----- grid con las imagenes -----*/
+
 
 /*----- Menu Accordion-----*/
 
@@ -145,12 +137,10 @@ main.gallerycontainer figure img {
     font-size: 20px;
     transition: 0.5s;
 }
-
 .active,
 .accordion:hover {
     background-color: #ccc;
 }
-
 .accordion:after {
     content: '\002B🚲';
     color: limegreen;
@@ -158,12 +148,9 @@ main.gallerycontainer figure img {
     float: left;
     margin-left: 5px;
 }
-
 .active:after {
     content: "\2212🚴";
-
 }
-
 .panel {
     padding: 0 18px;
     background-color: white;
@@ -174,6 +161,34 @@ main.gallerycontainer figure img {
 
 /*----- Menu Accordion-----*/
 
+
+/*----- Contact us-----*/
+
+fieldset {
+    background-color: white;
+    border-radius: 1em;
+    margin: 1.5em 3px;
+    border: 1px solid limegreen;
+}
+legend {
+    color: darkslategrey;
+    background-color: limegreen;
+    border-radius: 1em;
+    margin-left: 1%;
+    padding: 1em;
+    border: limegreen solid 1px;
+}
+label {
+    display: block;
+    margin: .5em;
+}
+label span {
+    display: block;
+}
+
+/*----- Contact us-----*/
+
+
 /*----- Service -----*/
 
 .grid-container {
@@ -182,7 +197,6 @@ main.gallerycontainer figure img {
     background-color: limegreen;
     padding: 1px;
 }
-
 .grid-item {
     background-color: whitesmoke;
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -193,6 +207,7 @@ main.gallerycontainer figure img {
 
 /*----- Service -----*/
 
+
 /*-----Videos-----*/
 
 .embed-container {
@@ -201,7 +216,6 @@ main.gallerycontainer figure img {
     height: 0;
     overflow: hidden;
 }
-
 .embed-container iframe {
     position: absolute;
     top: 0;
@@ -212,6 +226,7 @@ main.gallerycontainer figure img {
 
 /*-----Videos-----*/
 
+
 /*----- table -----*/
 
 table,
@@ -220,7 +235,6 @@ td {
     border: 1px solid limegreen;
     border-collapse: collapse;
 }
-
 th,
 td {
     padding: 15px;
@@ -231,6 +245,7 @@ td {
 
 /*----- table -----*/
 
+
 /*----- slideshow -----*/
 
 #slideshow {
@@ -240,7 +255,6 @@ td {
     height: auto;
     padding: 10px;
 }
-
 #slideshow > div {
     position: relative;
     top: 10px;
@@ -254,6 +268,7 @@ img {
 }
 
 /*----- slideshow -----*/
+
 
 /*----- The navigation: Force an Element To Self-Clear its Children -----*/
 
